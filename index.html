@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>私の自己紹介</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ★スマホ対応 -->
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding: 20px;
       font-family: 'Zen Maru Gothic', sans-serif;
       background: linear-gradient(to right, #fceff9, #e0f7fa);
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      box-sizing: border-box;
     }
 
     .card {
@@ -22,12 +24,13 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       padding: 30px;
       max-width: 500px;
+      width: 100%;
       text-align: center;
     }
 
     h1 {
       color: #d184c5;
-      font-size: 28px;
+      font-size: 24px;
       margin-bottom: 10px;
     }
 
@@ -48,7 +51,7 @@
 
     a {
       display: inline-block;
-      margin-top: 15px;
+      margin: 10px 5px;
       text-decoration: none;
       color: #fff;
       background-color: #f48fb1;
@@ -60,6 +63,37 @@
     a:hover {
       background-color: #ec407a;
     }
+
+    .yt-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff0000;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .yt-button:hover {
+      background-color: #cc0000;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+      .card {
+        padding: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+      a {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -69,29 +103,8 @@
     <p>好きなことはアニメ鑑賞とお絵描きです🎨<br>最近はブルーロックにどハマり中！</p>
     <p>このページでは、私の好きな作品や日常のことを紹介していきます💖</p>
     <a href="https://twitter.com/rinorino_riro" target="_blank">Twitterをみる</a>
-
-<a href="https://www.youtube.com/@rinorino_ri" target="_blank" class="yt-button">YouTubeを見る</a>
-
-<style>
-  .yt-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff0000;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-  }
-
-  .yt-button:hover {
-    background-color: #cc0000;
-  }
-</style>
-
-<a class="button" href="blog.html">▶ ブログを読む</a>
-
-
+    <a href="https://www.youtube.com/@rinorino_ri" target="_blank" class="yt-button">YouTubeを見る</a>
+    <a class="button" href="blog.html">▶ ブログを読む</a>
   </div>
 </body>
 </html>
