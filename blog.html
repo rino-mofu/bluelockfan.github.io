@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>りののブログ</title>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
@@ -65,7 +66,36 @@
       color: #888;
       margin-bottom: 10px;
     }
-    </style>
+    
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .post {
+        padding: 15px;
+        margin: 15px 0;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .post h2 {
+        font-size: 18px;
+      }
+
+      .date {
+        font-size: 13px;
+      }
+
+      .back {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+
+</style>
 </head>
 <body>
 
