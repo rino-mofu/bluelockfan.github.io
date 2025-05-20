@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>雨の中のジャズライブ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      background: linear-gradient(to right, #fceff9, #e0f7fa);
+      margin: 0;
+      padding: 20px;
+      color: #555;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #ffffffcc;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #d184c5;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .date {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      margin-bottom: 1.2em;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #f48fb1;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: background-color 0.3s;
+    }
+
+    a.back:hover {
+      background-color: #ec407a;
+    }
+
+    /* 吹き出しスタイル */
+    .chat {
+      display: flex;
+      align-items: flex-start;
+      margin: 20px 0;
+    }
+
+    .chat.left {
+      flex-direction: row;
+    }
+
+    .chat.right {
+      flex-direction: row-reverse;
+    }
+
+    .chat img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 0 10px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+
+    .bubble {
+      max-width: 75%;
+      padding: 12px 16px;
+      border-radius: 15px;
+      position: relative;
+      line-height: 1.6;
+      background-color: #fce4ec;
+    }
+
+    .chat.left .bubble {
+      background-color: #d0ebff;
+    }
+
+    .chat.right .bubble {
+      background-color: #ffc9c9;
+    }
+
+    .name {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      .bubble {
+        max-width: 100%;
+      }
+
+      .chat {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+      }
+
+      .chat.right {
+        align-items: flex-end !important;
+      }
+
+      .chat img {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>雨の中のジャズライブ</h1>
+    <div class="date">2025年05月17日</div>
+
+    <p>池袋をふらふら散歩してたら、たまたま西口公園で「池袋ジャズフェスティバル2025」
+っていうイベントがやってた。</p>
+    <p>椅子が置いてあったけど、雨だから座らないで立って聴いてた。<br>大雨だったのにもかからなず、たくさんの人が聴いていて、ジャズって、音楽ってすごいなって思った</p>
+    <p>降ってた雨すらも、ジャズの雰囲気をより引き立てる存在になってた。</p>
+
+
+    <a class="back" href="blog.html">← ブログ一覧に戻る</a>
+  </div>
+
+</body>
+</html>
